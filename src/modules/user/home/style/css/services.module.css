@@ -1,0 +1,98 @@
+#free_services {
+  background: #ffffff;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+#free_services .content {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #cdcdcd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#free_services .content .service {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+}
+
+#free_services .content .service i {
+  color: #a0a0a0;
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+#free_services .content .service .service_content h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+#free_services .content .service .service_content p {
+  font-size: 15px;
+}
+
+#free_services .content .service:first-child {
+  padding-left: 0;
+  margin-left: -12px;
+}
+
+#free_services .content .service:last-child {
+  padding-right: 0;
+  margin-right: -12px;
+}
+
+@media screen and (max-width: 1024px) {
+  #free_services .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #free_services .content .service {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  #free_services .content .service:nth-child(3) {
+    padding-left: 0;
+    margin-left: -12px;
+  }
+  #free_services .content .service:last-child {
+    padding-right: 15px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #free_services .content .service {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+  #free_services .content .service i {
+    margin-bottom: 15px;
+  }
+  #free_services .content .service:first-child {
+    padding-left: 10px;
+    margin-left: 0;
+  }
+  #free_services .content .service:nth-child(3) {
+    padding-left: 10px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  #free_services .content .service:last-child {
+    padding-left: 10px;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+/*# sourceMappingURL=services.module.css.map */

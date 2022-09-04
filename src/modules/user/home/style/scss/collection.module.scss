@@ -1,0 +1,109 @@
+@import "../../../../core/style/variable/variable";
+#collection{
+    background: $ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .header{
+        width: 520px;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 40px;
+
+        h5{
+            font-size: 14px;
+            font-weight: 500;
+            color: $a0a0a0;
+            margin-bottom: 10px;
+        }
+
+        h2{
+            font-size: 36px;
+            font-weight: 500;
+            color: $cl11111;
+            padding-bottom: 30px;
+        }
+
+        p{
+            font-size: 17px;
+            color: $a0a0a0;
+        }
+    }
+
+    .content{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+
+        .inner_content{
+            padding: 50px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s;
+
+            h4{
+                color: $cl11111;
+                font-size: 28px;
+                font-weight: 500;
+                margin-bottom: 15px !important;
+            }
+
+            button{
+                background: transparent;
+                color: $cl11111;
+                display: flex;
+                align-items: center;
+                border: none;
+
+                i{
+                    margin-left: 10px;
+                    transition: .5s;
+                }
+            }
+
+            &.small{
+                justify-content: center;
+
+                h4{
+                    margin: 0 auto;
+                    color: $ffffff;
+                }
+
+                button{
+                    color: $ffffff;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .link{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        &:hover{
+            .inner_content{
+                transform: scale(1.01);
+
+                button{
+                    i{
+                        transform: translateX(5px);
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width: 767px) {
+        .header{
+            width: 100%;
+        }
+    }
+}

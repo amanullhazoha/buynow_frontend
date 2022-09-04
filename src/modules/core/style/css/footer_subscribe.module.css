@@ -1,0 +1,51 @@
+.footer_subscribe h3 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.footer_subscribe form {
+  padding-bottom: 40px;
+}
+
+.footer_subscribe form input {
+  width: 425px;
+  padding: 15px;
+  font-size: 16px;
+  background: #303030;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  margin-right: 5px;
+}
+
+.footer_subscribe form button {
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background: #303030;
+  border: none;
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .footer_subscribe form input {
+    width: 340px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer_subscribe h3 {
+    font-size: 25px;
+  }
+  .footer_subscribe form input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .footer_subscribe form button {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=footer_subscribe.module.css.map */

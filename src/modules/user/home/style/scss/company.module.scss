@@ -1,0 +1,68 @@
+@import "../../../../core/style/variable/variable";
+
+#company{
+    background: $f5f5f5;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    .header{
+        width: 520px;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 40px;
+
+        h2{
+            font-size: 36px;
+            font-weight: 500;
+            color: $cl11111;
+            padding-bottom: 20px;
+        }
+
+        p{
+            font-size: 17px;
+            color: $a0a0a0;
+        }
+    }
+
+    .content{
+        display: flex;
+
+        img{
+            width: 16.66%;
+            padding: 5px;
+        }
+    }
+
+    .company_logo{
+        padding-top: 30px;
+
+        .item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and(max-width: 1023px) {
+        .content{
+            flex-wrap: wrap;
+
+            img{
+                width: 33.33%;
+            }
+        }
+    }
+
+    @media screen and(max-width: 767px) {
+        .header{
+            width: 100%;
+        }
+
+        .content{
+            img{
+                width: 50%;
+            }
+        }
+    }
+}

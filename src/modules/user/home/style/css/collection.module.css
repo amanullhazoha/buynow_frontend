@@ -1,0 +1,119 @@
+#collection {
+  background: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#collection .header {
+  width: 520px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#collection .header h5 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #a0a0a0;
+  margin-bottom: 10px;
+}
+
+#collection .header h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #111111;
+  padding-bottom: 30px;
+}
+
+#collection .header p {
+  font-size: 17px;
+  color: #a0a0a0;
+}
+
+#collection .content {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+#collection .content .inner_content {
+  padding: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#collection .content .inner_content h4 {
+  color: #111111;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 15px !important;
+}
+
+#collection .content .inner_content button {
+  background: transparent;
+  color: #111111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+}
+
+#collection .content .inner_content button i {
+  margin-left: 10px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#collection .content .inner_content.small {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#collection .content .inner_content.small h4 {
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+#collection .content .inner_content.small button {
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+#collection .content .link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#collection .content:hover .inner_content {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+#collection .content:hover .inner_content button i {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+}
+
+@media screen and (max-width: 767px) {
+  #collection .header {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=collection.module.css.map */

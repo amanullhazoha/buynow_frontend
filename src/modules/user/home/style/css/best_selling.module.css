@@ -1,0 +1,201 @@
+#best_selling {
+  background: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#best_selling .header {
+  width: 520px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#best_selling .header h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #111111;
+  padding-bottom: 30px;
+}
+
+#best_selling .header .selling_catagory {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#best_selling .header .selling_catagory li {
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+#best_selling .header .selling_catagory li:first-child {
+  margin-left: 0;
+}
+
+#best_selling figure .product_img {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+#best_selling figure .product_img ul {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+#best_selling figure .product_img ul li {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+}
+
+#best_selling figure .product_img ul li i {
+  font-size: 14px;
+  color: #303030;
+}
+
+#best_selling figure .product_img ul li:first-child {
+  margin-left: 0;
+}
+
+#best_selling figure .product_img ul li:hover {
+  background: #ff6f61;
+}
+
+#best_selling figure .product_img ul li:hover i {
+  color: #ffffff;
+}
+
+#best_selling figure .product_img:hover ul {
+  -webkit-transform: translateY(-180%);
+          transform: translateY(-180%);
+}
+
+#best_selling figure figcaption .catagory {
+  font-size: 14px;
+  color: #767676;
+  text-transform: capitalize;
+}
+
+#best_selling figure figcaption .product_name {
+  display: block;
+  font-size: 16px;
+  color: #111111;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+#best_selling figure figcaption .price {
+  font-size: 16px;
+  font-weight: 500;
+  color: #767676;
+}
+
+#best_selling figure figcaption button {
+  width: 100%;
+  margin-top: 10px;
+  background: #111111;
+  color: #ffffff;
+  padding: 5px 0;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  display: none;
+}
+
+#best_selling .load_more_btn {
+  color: #111111;
+  width: 120px;
+  margin: 0 auto;
+}
+
+#best_selling .load_more_btn button {
+  width: 100%;
+  background: transparent;
+  border: none;
+  font-weight: 500;
+  border-bottom: 1px solid #111111;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  #best_selling .header {
+    width: 100%;
+  }
+  #best_selling figure .product_img ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    width: 40px;
+    height: 90px;
+    left: calc(100% - 50px);
+    top: 10px;
+  }
+  #best_selling figure .product_img ul li {
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+  #best_selling figure .product_img ul li:first-child {
+    display: none;
+  }
+  #best_selling figure .product_img:hover ul {
+    -webkit-transform: none;
+            transform: none;
+  }
+  #best_selling figure figcaption button {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #best_selling .content {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #best_selling .content {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=best_selling.module.css.map */

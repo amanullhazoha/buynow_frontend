@@ -1,0 +1,109 @@
+.navbar {
+  background: #ffffff;
+  padding: 15px 0;
+}
+
+.navbar .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.navbar .content #logo {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111111;
+}
+
+.navbar .content #logo .logo_color {
+  color: #ff6f61;
+}
+
+.navbar .content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .content ul.nav li {
+  margin-right: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar .content ul.nav li a {
+  color: #111111;
+  line-height: 25px;
+}
+
+.navbar .content ul.nav li a:hover {
+  color: #ff6f61;
+  border-bottom: 1px solid #ff6f61;
+}
+
+.navbar .content ul.nav li:last-child {
+  margin-right: 0;
+}
+
+.navbar .content ul.navbar_icon li {
+  margin-right: 20px;
+}
+
+.navbar .content ul.navbar_icon li:last-child {
+  margin-right: 0;
+}
+
+.navbar .content ul.navbar_icon li:hover {
+  cursor: pointer;
+}
+
+.navbar .content .mobile_menu_btn {
+  display: none;
+  background: transparent;
+  color: #111111;
+  font-size: 22px;
+  border: none;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .content #logo {
+    margin-left: 25%;
+  }
+  .navbar .content ul.nav {
+    display: none;
+    position: absolute;
+    left: 15px;
+    top: 30px;
+    width: 255px;
+    z-index: 99;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
+  }
+  .navbar .content ul.nav li {
+    margin-right: 0;
+    width: 100%;
+  }
+  .navbar .content ul.nav li a {
+    line-height: 16px;
+    display: block;
+    padding: 10px;
+  }
+  .navbar .content ul.nav li a:hover {
+    border-bottom: none;
+    background: #ff6f61;
+    color: #ffffff;
+  }
+  .navbar .content .mobile_menu_btn {
+    display: block;
+  }
+}
+/*# sourceMappingURL=navbar.module.css.map */

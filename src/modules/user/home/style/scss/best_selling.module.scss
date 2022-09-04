@@ -1,0 +1,197 @@
+@import "../../../../core/style/variable/variable";
+
+#best_selling{
+    background: $ffffff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .header{
+        width: 520px;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 40px;
+
+        h2{
+            font-size: 36px;
+            font-weight: 500;
+            color: $cl11111;
+            padding-bottom: 30px;
+        }
+
+        .selling_catagory{
+            display: flex;
+            justify-content: center;
+
+            li{
+                font-size: 18px;
+                font-weight: 500;
+                margin-left: 25px;
+                cursor: pointer;
+
+                &:first-child{
+                    margin-left: 0;
+                } 
+            }
+        }
+    }
+
+    figure{
+        .product_img{
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 20px;
+
+            ul{
+                position: absolute;
+                bottom: -40px;
+                left: 0;
+                right: 0;
+                display: flex;
+                justify-content: center;
+                transition: transform 0.4s ease-in-out;
+                
+                li{
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    background: $ffffff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 10px;
+
+                    i{
+                        font-size: 14px;
+                        color: $cl3030;
+                    }
+
+                    &:first-child{
+                        margin-left: 0;
+                    }
+
+                    &:hover{
+                        background: $ff6f61;
+
+                        i{
+                            color: $ffffff;
+                        }
+                    }
+                }
+            }
+
+            &:hover{
+                ul{
+                    transform: translateY(-180%);
+                }
+            }
+        }
+
+        figcaption{
+            .catagory{
+                font-size: 14px;
+                color: $cl7676;
+                text-transform: capitalize;
+            }
+
+            .product_name{
+                display: block;
+                font-size: 16px;
+                color: $cl11111;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-weight: 500;
+            }
+
+            .price{
+                font-size: 16px;
+                font-weight: 500;
+                color: $cl7676;
+            }
+
+            button{
+                width: 100%;
+                margin-top: 10px;
+                background: $cl11111;
+                color: $ffffff;
+                padding: 5px 0;
+                font-weight: 500;
+                border: none;
+                border-radius: 5px;
+                display: none;
+            }
+        }
+    }
+
+    .load_more_btn{
+        color: $cl11111;
+        width: 120px;
+        margin: 0 auto;
+        
+        button{
+            width: 100%;
+            background: transparent;
+            border: none;
+            font-weight: 500;
+            border-bottom: 1px solid $cl11111;
+            transition: transform 0.4s ease-in-out;
+
+            &:hover{
+                //transform: translateY(200%);
+                //border: none;
+            }
+        }
+    }
+
+    @media screen and(max-width: 767px) {
+        .header{
+            width: 100%;
+        }
+
+        figure{
+            .product_img{
+                ul{
+                    flex-direction: column;
+                    align-items: flex-end;
+                    justify-content: start;
+                    width: 40px;
+                    height: 90px;
+                    left: calc(100% - 50px);
+                    top: 10px;
+
+                    li{
+                        margin-bottom: 10px;
+                        margin-left: 0;
+
+                        &:first-child{
+                            display: none;
+                        }
+                    }
+                }
+
+                &:hover{
+                    ul{
+                        transform: none;
+                    }
+                }
+            }
+
+            figcaption{
+                button{
+                    display: block;
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width: 576px) {
+        .content{
+            width: 50%;
+        }
+    }
+
+    @media screen and(max-width: 400px) {
+        .content{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,116 @@
+@import "../variable/mixin";
+
+.footer_menu{
+    padding-bottom: 30px;
+
+    #logo{
+        @include logo($ffffff);
+    }
+
+    .footer_menu_socail_icon{
+        display: flex;
+        margin-top: 15px;
+
+        li{
+            margin-right: 20px;
+            font-size: 22px;
+
+            a{
+                color: $cdcdcd;
+
+                &:hover{
+                    color: $ff6f61;
+                }
+            }
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+
+        @media screen and(max-width: 767px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .content{
+        display: flex;
+        justify-content: space-between;
+
+        .menu{
+            h4{
+                color: $ffffff;
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            .menu_list{
+                li{
+                    padding: 5px 0;
+                    color: $cdcdcd;
+                    font-size: 15px;
+
+                    a{
+                        color: $cdcdcd;
+
+                        &:hover{
+                            color: $ff6f61;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen and(max-width: 991px) {
+            flex-wrap: wrap;
+
+            .menu{
+                width: 50%;
+                margin-bottom: 20px;
+
+                &:nth-child(3){
+                    margin-bottom: 0;
+                }
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        @media screen and(max-width: 767px) {
+            .menu{
+                width: 100%;
+                margin-bottom: 20px;
+
+                .header{
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #444;
+                    padding-bottom: 15px;
+
+                    h4{
+                        font-size: 16px;
+                    }
+
+                    i{
+                        color: $cdcdcd;
+                    }
+    
+                }
+
+                .menu_list{
+                    display: none;
+                }
+
+                &:nth-child(3) {
+                    margin-bottom: 30px;
+                }
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

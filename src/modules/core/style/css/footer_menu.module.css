@@ -1,0 +1,122 @@
+.footer_menu {
+  padding-bottom: 30px;
+}
+
+.footer_menu #logo {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.footer_menu #logo .logo_color {
+  color: #ff6f61;
+}
+
+.footer_menu .footer_menu_socail_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+}
+
+.footer_menu .footer_menu_socail_icon li {
+  margin-right: 20px;
+  font-size: 22px;
+}
+
+.footer_menu .footer_menu_socail_icon li a {
+  color: #cdcdcd;
+}
+
+.footer_menu .footer_menu_socail_icon li a:hover {
+  color: #ff6f61;
+}
+
+.footer_menu .footer_menu_socail_icon li:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .footer_menu .footer_menu_socail_icon {
+    margin-bottom: 20px;
+  }
+}
+
+.footer_menu .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer_menu .content .menu h4 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.footer_menu .content .menu .menu_list li {
+  padding: 5px 0;
+  color: #cdcdcd;
+  font-size: 15px;
+}
+
+.footer_menu .content .menu .menu_list li a {
+  color: #cdcdcd;
+}
+
+.footer_menu .content .menu .menu_list li a:hover {
+  color: #ff6f61;
+}
+
+@media screen and (max-width: 991px) {
+  .footer_menu .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer_menu .content .menu {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .footer_menu .content .menu:nth-child(3) {
+    margin-bottom: 0;
+  }
+  .footer_menu .content .menu:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer_menu .content .menu {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer_menu .content .menu .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 1px solid #444;
+    padding-bottom: 15px;
+  }
+  .footer_menu .content .menu .header h4 {
+    font-size: 16px;
+  }
+  .footer_menu .content .menu .header i {
+    color: #cdcdcd;
+  }
+  .footer_menu .content .menu .menu_list {
+    display: none;
+  }
+  .footer_menu .content .menu:nth-child(3) {
+    margin-bottom: 30px;
+  }
+  .footer_menu .content .menu:last-child {
+    margin-bottom: 0;
+  }
+}
+/*# sourceMappingURL=footer_menu.module.css.map */

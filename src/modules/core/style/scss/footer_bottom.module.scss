@@ -1,0 +1,29 @@
+@import "../variable/variable";
+
+.footer_bottom{
+    border-top: 1px solid $cl2b2b;
+    
+    .content{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        p{
+            color: $cdcdcd;
+        }
+
+        @media screen and(max-width: 991px) {
+            display: block;
+
+            p{
+                text-align: center;
+                margin-bottom: 15px;
+            }
+
+            .footer_img{
+                text-align: center;
+            }
+        }
+    }
+}

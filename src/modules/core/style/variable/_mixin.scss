@@ -1,0 +1,17 @@
+@import "./variable";
+
+@mixin display_flex_Sbetween_Acenter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+};
+
+@mixin  logo ($color: $cl11111) {
+    font-size: 22px;
+    font-weight: 600;
+    color: $color;
+
+    .logo_color{
+        color: $ff6f61;
+    }
+}

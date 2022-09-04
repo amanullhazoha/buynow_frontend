@@ -1,0 +1,72 @@
+#company {
+  background: #f5f5f5;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+#company .header {
+  width: 520px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#company .header h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #111111;
+  padding-bottom: 20px;
+}
+
+#company .header p {
+  font-size: 17px;
+  color: #a0a0a0;
+}
+
+#company .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#company .content img {
+  width: 16.66%;
+  padding: 5px;
+}
+
+#company .company_logo {
+  padding-top: 30px;
+}
+
+#company .company_logo .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1023px) {
+  #company .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #company .content img {
+    width: 33.33%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #company .header {
+    width: 100%;
+  }
+  #company .content img {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=company.module.css.map */

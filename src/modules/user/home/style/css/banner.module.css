@@ -1,0 +1,86 @@
+#banner .banner_bg p {
+  color: #ffffff;
+  padding: 15px 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#banner .banner_carousel figure {
+  position: relative;
+}
+
+#banner .banner_carousel figure figcaption h3 {
+  position: absolute;
+  color: #ffffff;
+  font-size: 44px;
+  font-weight: 500;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#banner .banner_carousel figure figcaption button {
+  position: absolute;
+  bottom: 50px;
+  text-align: center;
+  width: 160px;
+  left: calc(50% - 75px);
+  padding: 10px 15px;
+  background: #ffffff;
+  color: #2b2b2b;
+  font-weight: 500;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#banner .banner_carousel figure figcaption button i {
+  margin-left: 10px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#banner .banner_carousel figure::before {
+  content: '';
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#banner .banner_carousel figure:hover::before {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#banner .banner_carousel figure:hover figcaption button i {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+}
+
+#banner .banner_carousel button {
+  background: transparent;
+}
+/*# sourceMappingURL=banner.module.css.map */

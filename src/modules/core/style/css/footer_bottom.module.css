@@ -1,0 +1,32 @@
+.footer_bottom {
+  border-top: 1px solid #2b2b2b;
+}
+
+.footer_bottom .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer_bottom .content p {
+  color: #cdcdcd;
+}
+
+@media screen and (max-width: 991px) {
+  .footer_bottom .content {
+    display: block;
+  }
+  .footer_bottom .content p {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .footer_bottom .content .footer_img {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=footer_bottom.module.css.map */

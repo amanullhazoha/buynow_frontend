@@ -1,0 +1,66 @@
+@import "../../../../core/style/variable/variable";
+
+#get_offer{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    position: relative;
+
+    .content{
+        padding-top: 150px;
+
+        h2{
+            font-size: 36px;
+            font-weight: 500;
+            color: $cl11111;
+            padding-bottom: 30px;
+        }
+
+        a{
+            margin-top: 20px;
+            background: $cl11111;
+            color: $ffffff;
+            width: 160px;
+            padding: 10px 30px;
+            font-weight: 500;
+            border: none;
+            display: flex;
+            align-items: center;
+
+            i{
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .angle{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background: rgba($cdcdcd, 0.7);
+        color: $cl11111;
+        border: none;
+        top: calc(50% - 20px);
+        
+        &.button_left{
+            left: 0;
+        }
+
+        &.button_right{
+            right: 0;
+        }
+    }
+
+    @media screen and(max-width: 767px) {
+        .content{
+            h2{
+                text-align: center;
+            }
+
+            a{
+                margin: 0 auto;
+            }
+        }
+    }
+}

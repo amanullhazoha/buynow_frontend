@@ -1,0 +1,112 @@
+@import "../variable/variable";
+@import "../variable/mixin";
+
+.navbar{
+    background: $ffffff;
+    padding: 15px 0;
+
+    .content{
+        @include display_flex_Sbetween_Acenter;
+        position: relative;
+
+        #logo{
+            font-size: 22px;
+            font-weight: 600;
+            color: $cl11111;
+
+            .logo_color{
+                color: $ff6f61;
+            }
+        }
+
+        ul{
+            display: flex;
+
+            &.nav{
+                
+                li{
+                    margin-right: 20px;
+                    font-size: 16px;
+                    font-weight: 500;
+
+                    a{
+                        color: $cl11111;
+                        line-height: 25px;
+
+                        &:hover{
+                            color: $ff6f61;
+                            border-bottom: 1px solid $ff6f61;
+                        }
+                    }
+
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            &.navbar_icon{
+                li{
+                    margin-right: 20px;
+
+                    &:last-child{
+                        margin-right: 0;
+                    }
+
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .mobile_menu_btn{
+            display: none;
+            background: transparent;
+            color: $cl11111;
+            font-size: 22px;
+            border: none;
+            padding: 0;
+        }
+
+        @media screen and(max-width: 768px) {
+            #logo{
+                margin-left: 25%;
+            }
+
+            ul{
+                &.nav{
+                    display: none;
+                    position: absolute;
+                    left: 15px;
+                    top: 30px;
+                    width: 255px;
+                    z-index: 99;
+                    background: $ffffff;
+                    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
+
+                    li{
+                        margin-right: 0;
+                        width: 100%;
+
+                        a{
+                            line-height: 16px;
+                            display: block;
+                            padding: 10px;
+
+                            &:hover{
+                                border-bottom: none;
+                                background: $ff6f61;
+                                color: $ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .mobile_menu_btn{
+                display: block;
+            }
+        }
+    }
+}

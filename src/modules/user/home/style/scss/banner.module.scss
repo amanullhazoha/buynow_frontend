@@ -1,0 +1,85 @@
+@import "../../../../core/style/variable/variable";
+
+#banner{
+    .banner_bg{
+        p{
+            color: $ffffff;
+            padding: 15px 0;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+
+    .banner_carousel{
+        figure{
+            position: relative;
+
+            figcaption{
+                h3{
+                    position: absolute;
+                    color: $ffffff;
+                    font-size: 44px;
+                    font-weight: 500;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                button{
+                    position: absolute;
+                    bottom: 50px;
+                    text-align: center;
+                    width: 160px;
+                    left: calc(50% - 75px);
+                    padding: 10px 15px;
+                    background: $ffffff;
+                    color: $cl2b2b;
+                    font-weight: 500;
+                    border: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    i{
+                        margin-left: 10px;
+                        transition: .5s;
+                    }
+                }
+            }
+
+            &::before{
+                content: '';
+                transition: ease .3s;
+                background-color: rgba(0,0,0,.3);
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+            }
+
+            &:hover{
+                &::before{
+                    transition-delay: 0.3s;
+                    background-color: rgba(0,0,0,.1)
+                }
+
+                figcaption{
+                    button{
+                        i{
+                            transform: translateX(5px);
+                        }
+                    }
+                }
+            }
+        }
+
+        button{
+            background: transparent;
+        }
+    }
+}

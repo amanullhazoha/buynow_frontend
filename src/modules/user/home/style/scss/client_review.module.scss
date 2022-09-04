@@ -1,0 +1,95 @@
+@import "../../../../core/style/variable/variable";
+
+#client_review{
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .header{
+        width: 520px;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 40px;
+
+        h5{
+            font-size: 14px;
+            font-weight: 500;
+            color: $a0a0a0;
+            margin-bottom: 10px;
+        }
+
+        h2{
+            font-size: 36px;
+            font-weight: 500;
+            color: $cl11111;
+            padding-bottom: 30px;
+        }
+    }
+
+    .content{
+        height: 340px;
+        border: 1px solid $e2e2e2;
+        padding: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 50px;
+
+        .review{
+            display: flex;
+            margin-bottom: 30px;
+
+            img{
+                margin-right: 20px;
+            }
+
+            .review_info{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .product_catagory{
+                    font-size: 14px;
+                    color: $a0a0a0;
+                }
+
+                .product_name{
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $cl11111;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+
+                .review_star{
+                    font-size: 12px;
+                    i{
+                        color: $a0a0a0;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+        }
+
+        .review_message{
+            font-size: 16px;
+            color: $cl3030;
+            margin-bottom: 20px;
+        }
+
+        .review_publish{
+            color: $cl7676;
+            font-weight: 500;
+            font-size: 15px;
+        }
+    }
+
+    @media screen and(max-width: 767px) {
+        .header{
+            width: 100%;
+        }
+
+        .content{
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}
